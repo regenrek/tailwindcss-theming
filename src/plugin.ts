@@ -108,11 +108,15 @@ function getThemeManagerFromThemeOption(themes: ThemeOption): ThemeManager | nul
     return themes;
   }
 
+  console.log('file3', themes)
+
   const resolved = path.resolve(themes);
 
-  if (!fs.existsSync(resolved)) {
-    throw new Error(`Could not find the theme configuration file. Tried '${resolved}'.`);
-  }
+  console.log('file2', resolved)
+
+  // if (!fs.existsSync(resolved)) {
+  //   throw new Error(`Could not find the theme configuration file. Tried '${resolved}'.`);
+  // }
 
   const config = require(resolved);
 

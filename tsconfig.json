@@ -8,8 +8,9 @@
     "moduleResolution": "node",
     "types": ["node"],
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowJs": false
   },
   "include": ["src"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }
